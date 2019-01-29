@@ -37,10 +37,4 @@ $ git push origin v2.0.0
 ~~~
 
 After releasing a new major version, create a new Git branch (e.g., `2.x`) that will contain the binary
-compatible evolutions of that version. In this branch, set the `binaryCompatibleVersion` (in file `build.sbt`)
-value to the major version number:
-
-~~~ diff
--val binaryCompatibleVersion: Option[String] = None
-+val binaryCompatibleVersion: Option[String] = Some("2.0.0")
-~~~
+compatible evolutions of that version.
