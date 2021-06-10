@@ -25,7 +25,10 @@ mdocExtraArguments += "--no-link-hygiene"
 Paradox / sourceDirectory := mdocOut.value
 makeSite := makeSite.dependsOn(mdoc.toTask("")).value
 SiteScaladoc / siteSubdirName := "api"
-paradoxProperties += ("scaladoc.base_url" -> "api")
+Compile / paradoxProperties ++= Map(
+  "github.base_url" -> s"https://github.com/scalacenter/library-example/tree/${if (isSnapshot.value) "main" else s"v${version.value}"}/src/documentation",
+  "scaladoc.base_url" -> "api"
+)
 
 // binary compatibility check
-mimaPreviousArtifacts := Set.empty // Disabled on `master` branch
+mimaPreviousArtifacts := Set.empty // Disabled on `main` branch
