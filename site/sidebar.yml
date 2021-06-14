@@ -1,0 +1,8 @@
+sidebar:
+    - title: Reference
+      url: site/documentation/reference.html
+    - title: Getting started
+      url: site/documentation/getting-started.html
+    - title: Contributing
+      url: site/documentation/contributing.html
+    - title: Dottydoc
