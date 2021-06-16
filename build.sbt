@@ -30,7 +30,7 @@ lazy val root = project
 lazy val siteSettings = Def.settings(
   Compile / doc / scalacOptions ++= Seq(
     "-d", "site-output",
-    "-siteroot", "./site/documentation",
+    "-siteroot", "./site",
   )
 )
 
