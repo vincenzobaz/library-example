@@ -6,6 +6,6 @@ This page shows all the features provided by the library.
 
 The `doNothing` function takes anything as parameter and returns it unchanged:
 
-@@snip [Usage.scala]($root$/src/test/scala/ch/epfl/scala/Usage.scala) { #do-nothing }
+[Usage](ch.epfl.scala.Usage$)
 
-Browse the @scaladoc[API documentation](ch.epfl.scala.Example$) for more information.
+Browse the [API documentation](ch.epfl.scala.Example$) for more information.
