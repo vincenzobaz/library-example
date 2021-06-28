@@ -1,0 +1,5 @@
+sidebar:
+  - title: Getting started
+    url: site-output/docs/getting-started.html
+  - title: Contributing
+    url: site-output/docs/contributing.html
