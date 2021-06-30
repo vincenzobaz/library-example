@@ -1,18 +1,17 @@
+---
+hasFrame: true
+---
+
 # Library Example
 
 A library that does nothing.
 
-## Setup
+### A fancy landing page for {{name}}
 
-Add the following dependency to your `build.sbt` file:
+It can be .html or .md file and will not have a usual frame a naviagation so you are free to experiment!
 
-@@@vars
-``` scala
-libraryDependencies += "ch.epfl.scala" %% "library-example" % "$project.version$"
-```
-@@@
+To disable the frame, set `hasFrame: false` in the frontmatter of this page.
+In such case do not forget to link to api and docs!
 
-@@@ index
-* [Getting Started](getting-started.md)
-* [Reference](reference.md)
-@@@
+[[docs|getting-started.md]]
+[[api|ch.epfl.scala]]

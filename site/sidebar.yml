@@ -1,5 +1,7 @@
 sidebar:
-  - title: Getting started
+  - title: unused 
     url: docs/getting-started.html
-  - title: Contributing
+  - title: unused
+    url: docs/reference.html
+  - title: unused
     url: docs/contributing.html
