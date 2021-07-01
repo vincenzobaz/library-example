@@ -2,11 +2,11 @@
 <html class="no-js" lang="en">
 
 <head>
-<title>Library Example</title>
+<title>Getting Started · Library Example</title>
 <meta charset="utf-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta name="description" content='A library that does nothing useful'/>
-<link rel="canonical" href="https://github.com/scalacenter/library-exampleindex.html"/>
+<link rel="canonical" href="https://github.com/scalacenter/library-examplegetting-started.html"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:100normal,100italic,300normal,300italic,400normal,400italic,500normal,500italic,700normal,700italic,900normal,900italicc" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="lib/jquery/jquery.min.js"></script>
 <script type="text/javascript" src="js/page.js"></script>
@@ -28,7 +28,7 @@
 <div class="off-canvas position-left" id="off-canvas-menu" data-off-canvas>
 <nav class="off-canvas-nav">
 <div class="nav-home">
-<a href="index.html" class="active">
+<a href="index.html" >
 <span class="home-icon">⌂</span>Library Example
 </a>
 <div class="version-number">
@@ -37,7 +37,7 @@
 </div>
 <div class="nav-toc">
 <ul>
-  <li><a href="getting-started.html" class="page">Getting Started</a></li>
+  <li><a href="getting-started.html" class="active page">Getting Started</a></li>
   <li><a href="reference.html" class="page">Reference</a></li>
 </ul>
 </div>
@@ -53,7 +53,7 @@
 H3.6C3.048,13,3,13.447,3,14c0,0.553,0.048,1,0.6,1H16.4c0.552,0,0.6-0.447,0.6-1C17,13.447,16.952,13,16.4,13z M3.6,7H16.4
 C16.952,7,17,6.553,17,6c0-0.553-0.048-1-0.6-1H3.6C3.048,5,3,5.447,3,6C3,6.553,3.048,7,3.6,7z"/></svg>
 </a>
-<div class="title"><a href="index.html" class="active">Library Example</a></div>
+<div class="title"><a href="index.html">Library Example</a></div>
 
 <!--
 <a href="https://www.example.com" class="logo show-for-medium">logo</a>
@@ -66,7 +66,7 @@ C16.952,7,17,6.553,17,6c0-0.553-0.048-1-0.6-1H3.6C3.048,5,3,5.447,3,6C3,6.553,3.
 <div class="medium-3 large-2 show-for-medium column">
 <nav class="site-nav">
 <div class="nav-home">
-<a href="index.html" class="active">
+<a href="index.html" >
 <span class="home-icon">⌂</span>Library Example
 </a>
 <div class="version-number">
@@ -75,7 +75,7 @@ C16.952,7,17,6.553,17,6c0-0.553-0.048-1-0.6-1H3.6C3.048,5,3,5.447,3,6C3,6.553,3.
 </div>
 <div class="nav-toc">
 <ul>
-  <li><a href="getting-started.html" class="page">Getting Started</a></li>
+  <li><a href="getting-started.html" class="active page">Getting Started</a></li>
   <li><a href="reference.html" class="page">Reference</a></li>
 </ul>
 </div>
@@ -90,39 +90,34 @@ C16.952,7,17,6.553,17,6c0-0.553-0.048-1-0.6-1H3.6C3.048,5,3,5.447,3,6C3,6.553,3.
 
 <div class="page-header row">
 <div class="medium-12 show-for-medium column">
+<div class="nav-breadcrumbs">
+<ul>
+  <li><a href="index.html">Library Example</a></li>
+  <li>Getting Started</li>
+</ul>
+</div>
 </div>
 </div>
 
 <div class="page-content row">
 <div class="small-12 large-9 column" id="docs">
-<h1><a href="#library-example" name="library-example" class="anchor"><span class="anchor-link"></span></a>Library Example</h1>
-<p>A library that does nothing.</p>
-<h2><a href="#setup" name="setup" class="anchor"><span class="anchor-link"></span></a>Setup</h2>
-<p>Add the following dependency to your <code>build.sbt</code> file:</p>
-<pre class="prettyprint"><code class="language-scala">libraryDependencies += &quot;ch.epfl.scala&quot; %% &quot;library-example&quot; % &quot;0.0.0+1-64cb9cfa-SNAPSHOT&quot;
+<h1><a href="#getting-started" name="getting-started" class="anchor"><span class="anchor-link"></span></a>Getting Started</h1>
+<p>First, start with the following import:</p>
+<pre class="prettyprint"><code class="language-scala">import ch.epfl.scala.Example
+</code></pre>
+<p>Then, do nothing with something:</p>
+<pre class="prettyprint"><code class="language-scala">Example.doNothing(42)
+// res0: Int = 42
 </code></pre>
 <div class="source-github">
-The source code for this page can be found <a href="https://github.com/scalacenter/library-example/tree/master/target/mdoc/index.md">here</a>.
+The source code for this page can be found <a href="https://github.com/scalacenter/library-example/tree/master/target/mdoc/getting-started.md">here</a>.
 </div>
 
 <div class="nav-next">
-<p><strong>Next:</strong> <a href="getting-started.html">Getting Started</a></p>
+<p><strong>Next:</strong> <a href="reference.html">Reference</a></p>
 </div>
 </div>
 <div class="large-3 show-for-large column" data-sticky-container>
-<nav class="sidebar sticky" data-sticky data-anchor="docs" data-sticky-on="large">
-<div class="page-nav">
-<div class="nav-title">On this page:</div>
-<div class="nav-toc">
-<ul>
-  <li><a href="index.html#library-example" class="header">Library Example</a>
-  <ul>
-    <li><a href="index.html#setup" class="header">Setup</a></li>
-  </ul></li>
-</ul>
-</div>
-</div>
-</nav>
 </div>
 </div>
 
