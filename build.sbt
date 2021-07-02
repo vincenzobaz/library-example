@@ -7,7 +7,6 @@ lazy val `library-example` = project
     organization := "ch.epfl.scala", // also used as a `groupId` by Sonatype
     description := "A library that does nothing useful",
     crossScalaVersions := Seq("3.0.0", "2.13.6", "2.12.14"),
-    scalaVersion := crossScalaVersions.value.head,
     libraryDependencies += "com.github.scalaprops" %% "scalaprops" % "0.8.3" % Test,
     testFrameworks += new TestFramework("scalaprops.ScalapropsFramework")
   ).settings(publishSettings)
@@ -49,6 +48,7 @@ lazy val siteSettings = {
   }
 
   Def.settings(
+    scalaVersion := "3.0.1-RC1"
     Compile / doc / target := target.value / outputSiteDir,
     mdocIn := baseDirectory.value / siteDir / "docs",
     mdocOut := target.value / tmpSiteDir / "docs",
@@ -56,6 +56,7 @@ lazy val siteSettings = {
     Compile / doc := (Compile / doc).dependsOn(Def.sequential(copySiteTask, mdoc.toTask(""))).value,
     Compile / doc / scalacOptions ++= Seq(
       "-siteroot", (target.value / tmpSiteDir).absolutePath,
+      "-versions-dictionary-url", "https://raw.githubusercontent.com/vincenzobaz/library-example/gh-pages/sites.json"
     )
   )
 }
