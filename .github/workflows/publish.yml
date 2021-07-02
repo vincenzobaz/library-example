@@ -39,5 +39,6 @@ jobs:
           git commit -m "[action] adding versions $tag"
           touch sites.json
           cat sites.json | jq --arg newver $tag '.versions[$newver] = "https://vincenzobaz.github.io/library-example/versions\($newver)"' > sites.json
+          git add sites.json
           git commit sites.json -m "[action] add new version sites.json"
           git push origin gh-pages
