@@ -29,6 +29,8 @@ jobs:
         run: sbt doc
       - name: Deploy new site
         run: |
+          git config user.name "gaction"
+          git config user.email "gaction@github.com"
           git remote set-url origin https://gaction:${GITHUB_TOKEN}@github.com/vincenzobaz/library-example.git
           git checkout gh-pages
           tag="$(basename ${{ github.ref }})"
