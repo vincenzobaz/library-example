@@ -48,7 +48,7 @@ lazy val siteSettings = {
   }
 
   Def.settings(
-    scalaVersion := "3.0.1-RC1"
+    scalaVersion := "3.0.1-RC1",
     Compile / doc / target := target.value / outputSiteDir,
     mdocIn := baseDirectory.value / siteDir / "docs",
     mdocOut := target.value / tmpSiteDir / "docs",
