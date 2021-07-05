@@ -42,6 +42,10 @@ jobs:
 
           echo "Preparing new sites.json"
           cat sites.json | jq --arg newver $tag '.versions[$newver] = "https://vincenzobaz.github.io/library-example/versions\($newver)"' > newsites.json
+          echo "OLD"
+          cat sites.json
+          echo "NEW"
+          cat newsites.json
           rm sites.json
           mv newsites.json sites.json
 
