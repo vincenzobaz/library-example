@@ -47,5 +47,5 @@ jobs:
 
           echo "Pushing new sites.json"
           git add sites.json
-          git commit sites.json -m "[action] add new version sites.json"
+          git commit -m "[action] add new version sites.json"
           git push origin gh-pages
