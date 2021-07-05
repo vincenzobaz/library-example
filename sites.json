@@ -1,3 +1,5 @@
 {
-  "versions": {}
+  "versions": {
+    "v1.x.y": "https://vincenzobaz.github.io/library-example/versionsv1.x.y"
+  }
 }
