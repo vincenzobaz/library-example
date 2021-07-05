@@ -41,7 +41,7 @@ jobs:
           git commit -m "[action] adding versions $tag"
 
           echo "Preparing new sites.json"
-          cat sites.json | jq --arg newver $tag '.versions[$newver] = "https://vincenzobaz.github.io/library-example/versions\($newver)"' > newsites.json
+          cat sites.json | jq --arg newver $tag '.versions[$newver] = "https://vincenzobaz.github.io/library-example/versions/\($newver)"' > newsites.json
           echo "OLD"
           cat sites.json
           echo "NEW"
